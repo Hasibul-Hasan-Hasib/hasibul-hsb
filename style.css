@@ -3,22 +3,69 @@
 *{
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+:root{
+  --background: #102E44;
+  --primary-color: #b2fcfb;
+  --secondary-color: #DDF2FD;
 }
 
 body{
-  background-color: #102E44;
+  background-color: var(--background);
 }
+
+.cv-link{
+  position: fixed;
+  right: 1rem;
+  color: var(--primary-color);
+  text-decoration: none;
+  font-size: 1.25rem;
+}
+
+.cv-link::after{
+  content: "";
+  position: absolute;
+  height: 100%;
+  left: 0;
+  top: 0;
+  transform: scale(0);
+  transition: all 0.5s ease-in-out;
+  width: 100%;
+  z-index: 3;
+  border-bottom: 1px solid #58faf7;
+  transform-origin: 50% 100% 0;
+}
+
+.cv-link:hover::after{
+  transform: scale(1);
+}
+
+/* .profile-img{
+  width: 2.5rem;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  margin-left: 1rem;
+} */
+
 
 nav{
   display: flex;
+  top: 0;
+  left: 0;
+  position: fixed;
   flex-direction: column;
+  justify-content: space-between;
   align-items: center;
   padding: 0 1rem;
   height: 100vh;
-  width: 4rem;
-  position: relative;
+  width: 5rem;
   transition: all 0.5s ease-in-out;
 }
+
+
 
 nav:hover{
   background-color: #06253a;
@@ -31,7 +78,7 @@ nav::after{
   left: 0;
   top: 0;
   transform: scale(.9);
-  transition: all 0.5s ease-in-out 0s;
+  transition: all 0.5s ease-in-out;
   width: 100%;
   z-index: 3;
   border-right: 1px solid #b2fcfb;
@@ -54,15 +101,43 @@ nav:hover::after{
   list-style: none;
 }
 
+
 .social-link{
   margin: 1.5rem 0;
-  color: #b2fcfb;
+  color: var(--primary-color);
 }
 
 .social-link:hover{
   animation: bounce2 2s ease;
 }
 
+
+main{
+  padding: 1rem 1rem 1rem 6rem;
+  display: grid;
+  justify-items: center;
+}
+
+.banner{
+  padding: 4rem;
+  width: 80%;
+  margin: 5rem 0;
+  border-radius: 1rem;
+  color: var(--primary-color);
+}
+
+.banner>h1{
+  font-size: 4rem;
+}
+
+.banner>h2{
+  color:#58faf7;
+}
+
+.banner>p{
+  font-size: 1.25rem;
+  color:var(--secondary-color)
+}
 
 
 @keyframes bounce2 {
