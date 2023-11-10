@@ -7,7 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/x-icon" href="favicon.ico">
-    <script src="app.js"></script>
     <script src="https://kit.fontawesome.com/5e73da3829.js" crossorigin="anonymous"></script>
     <title>MicroProjects</title>
 </head>
@@ -31,33 +30,34 @@
         <section class="banner">
             <div class="content">
                 <div class="banner-title">
-                    <h1>
-                        <span>&lt</span>
-                        Welcome
-                        <span>&gt</span>
-                    </h1>
+                    <span class="brakets">&lt</span>
+                    <h1 id="title" data-value="WELCOME">WELCOME</h1><span class="brakets">&gt</span>
                     <h2>
                         to
                     </h2>
-                    <h1>
-                        <span>&lt</span>
-                        Micro-Projects
-                        <span>&gt</span>
-                    </h1>
+                    <span class="brakets">&lt</span>
+                    <h1 id="second-title" data-value="MICRO-PROJECTS">MICRO-PROJECTS</h1><span
+                        class="brakets">&gt</span>
                 </div>
                 <div class="btn-container">
                     <a href="#projects" class="banner-btn">Projects <i class="fa-light fa-arrow-right"></i></a>
                     <a href="#projects" class="banner-btn">Effects <i class="fa-light fa-arrow-right"></i></a>
                 </div>
             </div>
-            <div class="effect">
-                <img src="/DSCF1158.jpg" class="banner-img" alt="">
+            <div class="card">
+                <div class="card-image">
+                    <img src="favicon.ico" alt="logo/">
+                </div>
+                <div class="card-gradient"></div>
+                <div class="card-letters"></div>
             </div>
+            
         </section>
         <section id="projects">
         </section>
     </main>
     <footer></footer>
+    <script src="app.js"></script>
 </body>
 
 </html>
