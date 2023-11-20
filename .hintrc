@@ -7,7 +7,8 @@
       "default",
       {
         "ignore": [
-          "-webkit-mask-image"
+          "-webkit-mask-image",
+          "scale"
         ]
       }
     ]

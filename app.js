@@ -32,7 +32,7 @@ document.getElementById("second-title").onmouseover = event => {
                 if (index < iterations) {
                     return event.target.dataset.value[index];
                 }
-                return chars[Math.floor(Math.random() * 25)]
+                return chars[Math.floor(Math.random() * 52)]
             })
             .join("");
 

@@ -14,14 +14,14 @@
 
 
   --background-light-rgb: 30 41 59;
-  
+
   --border-rgb: 255 255 255;
   --border: 1px solid rgb(var(--border-rgb) / 20%);
-  
-  --hyperplexed-main-rgb: 41 121 255;
-  --hyperplexed-main-light-rgb: 56 182 255;
-  --hyperplexed-secondary-rgb: 42 252 152;
-    
+
+  --color-main-rgb: 41 121 255;
+  --color-main-light-rgb: 56 182 255;
+  --color-secondary-rgb: 42 252 152;
+
   --card-size: 480px;
   --font-size: 0.8rem;
   --logo-size: calc(var(--card-size) * 0.3);
@@ -154,15 +154,11 @@ main {
 }
 
 .brakets {
-  font-size: 4rem;;
+  font-size: 4rem;
   font-weight: bolder;
   color: rgb(174, 88, 235)
 }
 
-
-.title {
-  font-size: 4rem;
-}
 
 .banner-title>h2 {
   font-size: 3rem;
@@ -185,6 +181,62 @@ main {
   width: max-content;
   margin: 0.5rem 0;
 }
+
+
+
+/* projects */
+
+
+
+#projects {
+  display: flex;
+  width: 80%;
+  align-items: left;
+  justify-content: center;
+  flex-direction: column;
+  margin: 5rem 0;
+}
+
+
+.title>h1 {
+  display: inline;
+  font-size: 2.5rem;
+  color: var(--primary-color);
+}
+
+.project {
+  display: grid;
+  grid-gap: 2rem;
+  align-items: center;
+  grid-template-columns: 1fr 1fr;
+  margin: 3rem 0;
+}
+
+.img-side {
+  background-image: linear-gradient(rgba(178, 252, 251, 0.45), rgba(88, 250, 247, 0.45)),
+    url('./f0c1655c-bce6-469d-bf94-0828eed3b181.png');
+  background-size: cover;
+  background-position: center;
+  height: 40vh;
+  border-radius: 15px;
+  transition: background-image 0.5s ease;
+}
+
+
+.img-side:hover {
+  background-image: url('./f0c1655c-bce6-469d-bf94-0828eed3b181.png');
+}
+
+
+.content-side {
+  background-color: #06253a;
+  color: var(--primary-color);
+  height: 30vh;
+  padding: 2rem;
+  border-radius: 15px;
+}
+
+
 
 
 
@@ -222,13 +274,11 @@ main {
   height: 100%;
   width: 100%;
   position: absolute;
-  background: radial-gradient(
-    rgb(var(--background-light-rgb)) 20%, 
-    rgb(var(--hyperplexed-main-rgb)) 50%, 
-    rgb(var(--hyperplexed-main-light-rgb)),
-    rgb(var(--hyperplexed-secondary-rgb))
-  );
-  mix-blend-mode: darken; 
+  background: radial-gradient(rgb(var(--background-light-rgb)) 20%,
+      rgb(var(--color-main-rgb)) 50%,
+      rgb(var(--color-main-light-rgb)),
+      rgb(var(--color-secondary-rgb)));
+  mix-blend-mode: darken;
   pointer-events: none;
   z-index: 3;
 }
@@ -247,12 +297,10 @@ main {
   word-wrap: break-word;
   opacity: 0;
   transition: opacity 400ms;
-  -webkit-mask-image: radial-gradient(
-    calc(var(--card-size) * 0.8) circle at var(--x) var(--y), 
-    rgb(255 255 255) 20%, 
-    rgb(255 255 255 / 25%), 
-    transparent
-  );
+  -webkit-mask-image: radial-gradient(calc(var(--card-size) * 0.8) circle at var(--x) var(--y),
+      rgb(255 255 255) 20%,
+      rgb(255 255 255 / 25%),
+      transparent);
   scale: 1.03;
 }
 
