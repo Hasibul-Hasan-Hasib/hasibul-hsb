@@ -239,6 +239,7 @@ main {
   top: -10px;
   left: 10px;
   transition: all 0.25s ease-in-out;
+  opacity: 1;
 }
 
 .pro-image {
@@ -249,8 +250,11 @@ main {
   aspect-ratio: 3.5/2;
   border-radius: 15px;
   position: absolute;
-  z-index: 2;
+  top: 0;
+  left: 0;
+  z-index: 1;
   transition: all 0.25s ease-in-out;
+  opacity: 0.75;
 }
 
 
@@ -258,12 +262,14 @@ main {
   z-index: 1;
   top: 0;
   left: 0;
+  opacity: 0.75;
 }
 
 .img-side:hover> .pro-image {
-  z-index: 3;
+  z-index: 2;
   top: -10px;
   left: 10px;
+  opacity: 1;
 }
 
 
