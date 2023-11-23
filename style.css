@@ -204,6 +204,7 @@ main {
   justify-content: center;
   flex-direction: column;
   margin: 5rem 0;
+  position: relative;
 }
 
 
@@ -218,12 +219,12 @@ main {
   grid-gap: 2rem;
   align-items: center;
   grid-template-columns: 1fr 1fr;
-  margin: 3rem 0;
+  margin: 5rem 0;
 }
 
 .img-side{
   position: relative;
-  height: 40vh;
+  aspect-ratio: 2/1.1;
 }
 
 .pro-gradient{
@@ -231,7 +232,7 @@ main {
   url('./f0c1655c-bce6-469d-bf94-0828eed3b181.png');
   background-size: cover;
   background-position: center;
-  height: 40vh;
+  height: 100%;
   aspect-ratio: 3.5/2;
   border-radius: 15px;
   position: absolute;
@@ -246,7 +247,7 @@ main {
   background-image: url('./f0c1655c-bce6-469d-bf94-0828eed3b181.png');
   background-size: cover;
   background-position: center;
-  height: 40vh;
+  height: 100%;
   aspect-ratio: 3.5/2;
   border-radius: 15px;
   position: absolute;

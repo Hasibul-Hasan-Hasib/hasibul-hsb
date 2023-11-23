@@ -8,9 +8,17 @@
       {
         "ignore": [
           "-webkit-mask-image",
-          "scale"
+          "scale",
+          "height: fit-content"
         ]
       }
-    ]
+    ],
+    "axe/text-alternatives": [
+      "default",
+      {
+        "frame-title": "off"
+      }
+    ],
+    "no-inline-styles": "off"
   }
 }
