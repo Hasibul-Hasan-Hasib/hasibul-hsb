@@ -214,15 +214,22 @@ main {
   color: var(--primary-color);
 }
 
-.project {
+/* .project {
   display: grid;
   grid-gap: 2rem;
   align-items: center;
   grid-template-columns: 1fr 1fr;
   margin: 5rem 0;
+} */
+
+.project {
+  display: flex;
+  align-items: center;
+  margin: 5rem 0;
 }
 
 .img-side{
+  width: 100%;
   position: relative;
   aspect-ratio: 2/1.1;
 }
@@ -279,13 +286,18 @@ main {
   color: var(--primary-color);
   height: fit-content;
   padding: 2rem;
+  width: 120%;
+  z-index: 5;
   border-radius: 15px;
-  text-align: right;
+  margin-left: -7rem;
 }
 
+.content-side>h2{
+  color: var(--secondary-color);
+}
 
 .badge{
-  background-color: #102E44;
+  background-color:var(--background);
   padding: 0.25rem 0.5rem;
   border-radius: 10px;
 }
@@ -293,12 +305,15 @@ main {
 .pro-links{
   display: flex;
   align-items: center;
-  margin-top: 2rem;
 }
 
 .pro-link{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   color: var(--secondary-color);
-  margin-right: 3rem;
+  margin-right: 0.75rem;
+  text-decoration: none;
 }
 
 
