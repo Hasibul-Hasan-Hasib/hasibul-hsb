@@ -280,8 +280,26 @@ main {
   height: fit-content;
   padding: 2rem;
   border-radius: 15px;
+  text-align: right;
 }
 
+
+.badge{
+  background-color: #102E44;
+  padding: 0.25rem 0.5rem;
+  border-radius: 10px;
+}
+
+.pro-links{
+  display: flex;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.pro-link{
+  color: var(--secondary-color);
+  margin-right: 3rem;
+}
 
 
 
