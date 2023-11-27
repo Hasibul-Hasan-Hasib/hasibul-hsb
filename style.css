@@ -312,7 +312,6 @@ main {
   justify-content: space-between;
   align-items: center;
   color: var(--secondary-color);
-  margin-right: 0.75rem;
   text-decoration: none;
 }
 
@@ -321,6 +320,19 @@ main {
 
 
 /* effect */
+
+
+#effects {
+  display: flex;
+  width: 80%;
+  align-items: left;
+  justify-content: center;
+  flex-direction: column;
+  margin: 5rem 0;
+  position: relative;
+}
+
+
 
 
 
