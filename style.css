@@ -333,6 +333,50 @@ main {
 }
 
 
+.effects-container{
+  display: grid;
+  grid-gap: 2rem;
+  grid-template-columns: repeat(3,1fr);
+  margin: 5rem 0;
+
+}
+
+.effect{
+  width: 100%;
+  background-color: #06253a;
+  border-radius: 15px;
+  height: 40vh;
+}
+
+
+.effect-side{
+  height: 30vh;
+  background-color: #58faf7;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.effect-info{
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 3rem ;
+}
+
+.effect-info>button{
+  background-color:#102E44;
+  border:2px solid #58faf7;
+  padding: 0.5rem 1rem;
+  color:#58faf7;
+  font-size: 1rem;
+  border-radius: 10px;
+  height: fit-content;
+  font-weight: bold;
+}
+
 
 
 
