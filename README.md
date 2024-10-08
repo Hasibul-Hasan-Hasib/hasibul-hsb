@@ -17,7 +17,7 @@ I am Hasibul Hasan, a passionate web developer with a focus on building modern, 
 
 ## 🖥️ Portfolio Website
 
-You can check out my full portfolio live at: [hasibul-hsb.github.io](https://hasibul-hsb.github.io) (Link to your portfolio if you have it deployed).
+You can check out my full portfolio live at: [hasibul-hsb.github.io](https://hasibul-hsb.netlify.app/) (Link to your portfolio if you have it deployed).
 
 ## 💼 Projects
 
