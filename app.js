@@ -1,46 +1,69 @@
 const chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
 
 
-document.getElementById("title").onmouseover = event => {
+// document.getElementById("banner-title-1").onmouseover = event => {
 
+//     let iterations = 0;
+
+//     const interval = setInterval(() => {
+//         event.target.innerText = event.target.innerText.split("")
+//             .map((letter, index) => {
+//                 if (index < iterations) {
+//                     return event.target.dataset.value[index];
+//                 }
+//                 return chars[Math.floor(Math.random() * 25)]
+//             })
+//             .join("");
+
+//         if (iterations >= event.target.dataset.value.length) clearInterval(interval);
+
+//         iterations += 1 / 3;
+//     }, 30)
+// }
+
+
+
+
+
+
+const element = document.getElementById("banner-title-1")
+const element2 = document.getElementById("banner-title-2")
+
+
+const titleAnimation = (element) => {
     let iterations = 0;
 
     const interval = setInterval(() => {
-        event.target.innerText = event.target.innerText.split("")
+        element.innerText = element.innerText.split("")
             .map((letter, index) => {
                 if (index < iterations) {
-                    return event.target.dataset.value[index];
+                    return element.dataset.value[index];
                 }
                 return chars[Math.floor(Math.random() * 25)]
             })
             .join("");
 
-        if (iterations >= event.target.dataset.value.length) clearInterval(interval);
+        if (iterations >= element.dataset.value.length) clearInterval(interval);
 
         iterations += 1 / 3;
     }, 30)
 }
 
 
-document.getElementById("second-title").onmouseover = event => {
+element.addEventListener("mousemove",()=>{
+    titleAnimation(element)
+});
+element2.addEventListener("mousemove",()=>{
+    titleAnimation(element2)
+});
 
-    let iterations = 0;
+setInterval(()=>{titleAnimation(element)},9500)
+setInterval(()=>{titleAnimation(element2)},10000)
 
-    const interval = setInterval(() => {
-        event.target.innerText = event.target.innerText.split("")
-            .map((letter, index) => {
-                if (index < iterations) {
-                    return event.target.dataset.value[index];
-                }
-                return chars[Math.floor(Math.random() * 52)]
-            })
-            .join("");
 
-        if (iterations >= event.target.dataset.value.length) clearInterval(interval);
 
-        iterations += 1 / 3;
-    }, 30)
-}
+
+
 
 
 
