@@ -63,7 +63,7 @@ To run any project locally, follow these steps:
 Feel free to reach out to me via:
 
 - **Email**: mdhasibulctg100@gmail.com.com
-- **LinkedIn**: [Hasibul Hasan]([https://linkedin.com/in/hasibulhasan](https://www.linkedin.com/in/md-hasibul-hasan-hasib/))
+- **LinkedIn**: [Hasibul Hasan](https://www.linkedin.com/in/md-hasibul-hasan-hasib/)
 - **GitHub**: [Hasibul-Hasan-Hasib](https://github.com/Hasibul-Hasan-Hasib)
 
 ---
