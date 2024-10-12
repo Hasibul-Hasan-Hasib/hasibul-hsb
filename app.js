@@ -1,30 +1,7 @@
+
+// Banner title animation
+
 const chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
-
-
-// document.getElementById("banner-title-1").onmouseover = event => {
-
-//     let iterations = 0;
-
-//     const interval = setInterval(() => {
-//         event.target.innerText = event.target.innerText.split("")
-//             .map((letter, index) => {
-//                 if (index < iterations) {
-//                     return event.target.dataset.value[index];
-//                 }
-//                 return chars[Math.floor(Math.random() * 25)]
-//             })
-//             .join("");
-
-//         if (iterations >= event.target.dataset.value.length) clearInterval(interval);
-
-//         iterations += 1 / 3;
-//     }, 30)
-// }
-
-
-
-
-
 
 const element = document.getElementById("banner-title-1")
 const element2 = document.getElementById("banner-title-2")
@@ -67,6 +44,10 @@ setInterval(()=>{titleAnimation(element2)},10000)
 
 
 
+
+
+
+// banner background text effect
 
 const randomChar = () => chars[Math.floor(Math.random() * (chars.length - 1))],
     randomString = length => Array.from(Array(length)).map(randomChar).join("");

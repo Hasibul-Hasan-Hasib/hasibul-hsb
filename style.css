@@ -8,6 +8,7 @@
 
 :root {
   --background: #102e44;
+  --secondary-background: #06253a;
   --primary-color: #b2fcfb;
   --secondary-color: #58faf7;
   font-family: sans-serif;
@@ -83,7 +84,7 @@ nav {
 }
 
 nav:hover {
-  background-color: #06253a;
+  background-color: var(--secondary-background);
 }
 
 nav::after {
@@ -95,7 +96,6 @@ nav::after {
   transform: scale(0.9);
   transition: all 0.5s ease-in-out;
   width: 100%;
-  z-index: 3;
   border-right: 1px solid #b2fcfb;
   transform-origin: 100% 50% 0;
 }
@@ -113,6 +113,7 @@ nav:hover::after {
 .social-links {
   margin: auto 0 0.5rem 0;
   list-style: none;
+  z-index: 10;
 }
 
 .social-link {
@@ -121,7 +122,7 @@ nav:hover::after {
 }
 
 .social-link:hover {
-  animation: bounce2 2s ease;
+  animation: bounce2 1s ease;
 }
 
 main {
@@ -131,6 +132,25 @@ main {
   justify-content: center;
   align-items: center;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Banner */
+
 
 .banner {
   display: grid;
@@ -189,11 +209,22 @@ main {
   transition: all 0.1s ease-in-out;
   padding: 0.5rem 1rem;
   margin: 1rem 0;
+  margin-right: 1rem;
 }
 
 .banner-btn:hover {
   border-radius: 10px;
-  border: 2px solid var(--secondary-color);
+  border: 2px solid var(--primary-color);
+  background-color: var(--secondary-background);
+}
+
+.banner-btn-2{
+  color: var(--secondary-color);
+  border-bottom: 2px solid var(--secondary-color);
+}
+.banner-btn-2:hover{
+  border-color: var(--secondary-color);
+  background-color: var(--secondary-background);
 }
 
 /* banner image side */
@@ -220,7 +251,6 @@ main {
 
 .card-image > img {
   width: 70%;
-  /* clip-path: circle(); */
   background:
     linear-gradient( transparent ,#102e44) padding-box,
     linear-gradient(to right, rgb(174, 88, 235), var(--secondary-color)) border-box;
@@ -271,6 +301,23 @@ main {
   opacity: 1;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* projects */
 
 #projects {
@@ -289,13 +336,6 @@ main {
   color: var(--primary-color);
 }
 
-/* .project {
-  display: grid;
-  grid-gap: 2rem;
-  align-items: center;
-  grid-template-columns: 1fr 1fr;
-  margin: 5rem 0;
-} */
 
 .project {
   display: flex;
@@ -310,10 +350,7 @@ main {
 }
 
 .pro-gradient {
-  background-image: linear-gradient(rgba(178, 252, 251, 0.45), rgba(88, 250, 247, 0.45)),
-    url("./f0c1655c-bce6-469d-bf94-0828eed3b181.png");
-  background-size: cover;
-  background-position: center;
+  background-image: linear-gradient(rgba(178, 252, 251, 0.45), rgba(88, 250, 247, 0.45));
   height: 100%;
   aspect-ratio: 3.5/2;
   border-radius: 15px;
@@ -326,9 +363,6 @@ main {
 }
 
 .pro-image {
-  background-image: url("./f0c1655c-bce6-469d-bf94-0828eed3b181.png");
-  background-size: cover;
-  background-position: center;
   height: 100%;
   aspect-ratio: 3.5/2;
   border-radius: 15px;
@@ -355,7 +389,7 @@ main {
 }
 
 .content-side {
-  background-color: #06253a;
+  background-color: var(--secondary-background);
   color: var(--primary-color);
   height: fit-content;
   padding: 2rem;
@@ -388,7 +422,25 @@ main {
   text-decoration: none;
 }
 
-/* effect */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Contact */
 
 #contact {
   display: flex;
@@ -415,8 +467,7 @@ main {
   font-weight: bold;
   text-align: center;
   display: block;
-  background-image: linear-gradient(90deg, var(--primary-color),rgb(144, 0, 247) );
-  margin-top: 2rem;
+  background: linear-gradient(90deg, rgba(88,250,247,1) 0%, rgba(99,203,247,1) 27%, rgba(110,151,247,1) 49%, rgba(123,95,247,1) 69%, rgba(144,0,247,1) 100%);  margin-top: 2rem;
   -webkit-background-clip: text;
   color: transparent;
   text-decoration: none;
@@ -432,7 +483,7 @@ main {
   justify-content: space-between;
   margin: 2rem 0;
   border-radius: 15px;
-  background-color:#06253a ;
+  background-color:var(--secondary-background) ;
 }
 
 .contact-link-container>img{
@@ -441,7 +492,7 @@ main {
 
 .contact-phone-number{
   font-size: 1.5rem;
-  color: var(--secondary-color);
+  color: var(--primary-color);
   text-decoration: none;
 }
 
